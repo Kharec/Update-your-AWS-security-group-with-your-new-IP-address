@@ -1,2 +1,2 @@
-# Update-your-AWS-security-group-with-your-new-IP-address
+# updateRoute53Record
 Update your AWS Route53 zone and record with the wanted IP
