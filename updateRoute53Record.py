@@ -17,7 +17,6 @@ __status__ = "Production"
 
 def getIp():
 	'''Simple function to get your ip, using ipinfo.io
-	API and JSON. We're modifying it to match AWS SG
-	requirements'''
+	API and JSON.'''
 
-	return(get(('https://ipinfo.io')).json()['ip']+"/32")
+	return(get(('https://ipinfo.io')).json()['ip'])
