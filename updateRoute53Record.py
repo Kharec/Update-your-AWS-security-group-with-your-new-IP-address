@@ -4,7 +4,7 @@
 from sys import exit
 from requests import get
 import boto3
-import datetime
+from datetime import datetime
 from botocore.exceptions import ClientError as BotoClientError
 import argparse
 
@@ -37,7 +37,7 @@ if not args['id'] or not args['record']:
 route53 = boto3.client('route53')
 hostedZoneId = args['id']
 currentIp = getIp()
-date = datetime.datetime.now().strftime("%d-%m-%y-%H:%M")
+date = datetime.now().strftime("%d-%m-%y-%H:%M")
 dnsRecord = args['record']
 
 # validate the zone's id
