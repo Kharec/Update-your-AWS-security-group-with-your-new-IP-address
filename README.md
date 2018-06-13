@@ -10,7 +10,7 @@ You need the followings :
 Then, from your terminal, just do:
 
 ```bash
-  kharec@macbee ~/Desktop % path/to/updateRoute53Record.py <ZONE_ID> <RECORD.DOMAINE.FR>
+  kharec@macbee ~/Desktop % path/to/updateRoute53Record.py <ZONE_ID> <RECORD.DOMAIN.FR>
 ```
 
 And it's on.
