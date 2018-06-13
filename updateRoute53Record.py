@@ -30,11 +30,7 @@ parser.add_argument('record', help='DNS zone\'s record you want to update')
 
 args = vars(parser.parse_args())
 
-if not args['id']:
-	parser.print_help()
-	exit(1)
-
-if not args['record']:
+if not args['id'] or not args['record']:
 	parser.print_help()
 	exit(1)
 
