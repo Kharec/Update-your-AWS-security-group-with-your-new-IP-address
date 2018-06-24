@@ -17,10 +17,9 @@ __status__ = "Production"
 
 
 def getIp():
-	'''Simple function to get your ip, using ipinfo.io
-	API and JSON.'''
+	'''Simple function to get your ip'''
 
-	return(get(('https://ipinfo.io')).json()['ip'])
+	return(get('http://checkip.amazonaws.com').text[:-2])
 
 # Parse args
 parser = argparse.ArgumentParser(description="Update your AWS DNS record with your new IP address")
