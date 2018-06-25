@@ -19,7 +19,7 @@ __status__ = "Production"
 def getIp():
 	'''Simple function to get your ip'''
 
-	return(get('https://ipinfo.io').json()['ip']+"/32")
+	return(get('https://ipinfo.io').json()['ip'])
 
 # Parse args
 parser = argparse.ArgumentParser(description="Update your AWS DNS record with your new IP address")
